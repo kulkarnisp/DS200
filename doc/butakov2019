@@ -3,6 +3,18 @@ Application of computer vision and deep learning for flame monitoring and combus
 December 2019Journal of Physics Conference Series 1421:012005
 DOI: 10.1088/1742-6596/1421/1/012005
 
+
+Strengths
+1. Image reconstruction is efficiently used to detect combustion events from recorded flame images with an autoencoder.
+2. Data based characterisation of abnormal burning regimes such as  with a lower excess air ratio, there is an increase in the amount of unburned coal dust. 
+3. Comparison on data model is made using multiple upsampling layers such as deconvolutions and bicubics or pixel convolutions.
+
+
+Weakness:
+1. The ROC-AUC curve was limited by accuracy of labelled images, thus semi-supervised or generative approach could have been feasible model for data reconstruction.
+2. The training data was manually filtered with only combustion regimes with high coefficient of excess air being used. However a better low dimensional embedding may have been obtained using entire data in variational autoencoders training.
+
+
 Read full-text
 Download citation
 References (9)
