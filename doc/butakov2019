@@ -1,0 +1,83 @@
+
+Application of computer vision and deep learning for flame monitoring and combustion anomaly detection
+December 2019Journal of Physics Conference Series 1421:012005
+DOI: 10.1088/1742-6596/1421/1/012005
+
+Read full-text
+Download citation
+References (9)
+Figures (6)
+Figures
+Experimental rig of 5 MW power. (a) Schematics; T1-T8 denote thermocouples and G5 -G7 the gas sampling apertures. (b) View at the furnace (burner and combustion chamber) in autothermal operation. Inspection windows show stable and uniform flame along the whole combustor length.
+Experimental rig of 5 MW power. (a) Schematics; T1-T8 denote thermocouples and G5 -G7 the gas sampling apertures. (b) View at the furnace (burner and combustion chamber) in autothermal operation. Inspection windows show stable and uniform flame along the whole combustor length.
+… 
+Scheme of autoencoder [5].
+Scheme of autoencoder [5].
+… 
+The architecture of the combined model of autoencoder (a) encoder and (b) decoder.
+The architecture of the combined model of autoencoder (a) encoder and (b) decoder.
+… 
+Examples of augmented images in training set. Shifts, small angle rotations, blur, zoom were applied.
+Examples of augmented images in training set. Shifts, small angle rotations, blur, zoom were applied.
+… 
+Reconstruction error on test sample. The blue dots show the reconstruction error of normal images and red ones -anomaly images. The classification probability is proportional to the reconstruction error.
++1
+Reconstruction error on test sample. The blue dots show the reconstruction error of normal images and red ones -anomaly images. The classification probability is proportional to the reconstruction error.
+… 
+Figures - available via license: Creative Commons Attribution 3.0 Unported
+Content may be subject to copyright.
+ResearchGate Logo
+
+Discover the world's research
+
+    19+ million members
+    135+ million publications
+    700k+ research projects
+
+Join for free
+Available via license: CC BY 3.0
+Content may be subject to copyright.
+Journal of Physics: Conference Series
+PAPER • OPEN ACCESS
+Application of computer vision and deep learning for flame monitoring
+and combustion anomaly detection
+To cite this article: S Abdurakipov and E Butakov 2019 J. Phys.: Conf. Ser. 1421 012005
+ 
+View the article online for updates and enhancements.
+This content was downloaded from IP address 173.211.105.218 on 30/12/2019 at 01:23
+Content from this work may be used under the terms of the Creative Commons Attribution 3.0 licence. Any further distribution
+of this work must maintain attribution to the author(s) and the title of the work, journal citation and DOI.
+Published under licence by IOP Publishing Ltd
+15th International Conference on Optical Methods of Flow Investigation 2019
+Journal of Physics: Conference Series 1421 (2019) 012005
+IOP Publishing
+doi:10.1088/1742-6596/1421/1/012005
+1
+ 
+ 
+ 
+ 
+ 
+ 
+Application of computer vision and deep learning for flame 
+monitoring and combustion anomaly detection 
+S Abdurakipov and E Butakov* 
+Kutateladze Institute of Thermophysics SB RAS, Prospekt Akademika Lavrent'eva 1, 
+Novosibirsk, 630090, Russia 
+ 
+*E-mail: e_butakov@mail.ru 
+Abstract. This paper  is  devoted to study  combustion of  pulverized  coal  in  a  5 MW thermal 
+furnace with  tangential  scroll supply of coal-air  suspension and cylindrical reaction  chamber. 
+Deep learning approaches were  used  to  monitor  the  combustion of a coal flame in a  furnace 
+and to determine combustion anomalies from flame images. We have developed a deep neural 
+network autoencoder, which is a  combination of convolutional  layers, fully-connected layers 
+and  upsampling  layers.  The  autoencoder  was  trained to  reconstruct  the  combustion  regimes 
+that corresponded to high values of the coefficient of excess air. The trained autoencoder was 
+then used to identify abnormal burning regimes with a lower excess air ratio, in which there is 
+an increase in the amount of unburned coal dust. The best classification model had AUC ROC 
+quality metric  value  on  a  test image  sample  AUC ROC  =  0.8.  The  average  precision  of  the 
+model was 77% and the average recall was 66%. The metrics obtained is limited by the quality 
+of the image labeling due  to poorly controlled experimental conditions. The paper  concluded 
+that  the  use  of  upsampling  with  convolutional  layers  show  themselves  better  than  the 
+deconvolutional  layers,  and  the  combination  of  convolutional  layers  with  fully-connected 
+layers constitutes the optimal architecture of the mod
