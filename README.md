@@ -6,31 +6,31 @@ Following plots on gov.in data
 - Scatter
 - Box
 - Bar
+Sample files of each plot are stored in folder img/
 
 
-## How to run
-1. Set up a python 3+jupyter environment and install pandas.
+### How to run
+1. Set up a python3.x + jupyter environment and install pandas.
 2. Download the repo
 3. Run plotter.ipynb notebook
 
+
+An example of each of these plots:
 **a. Scatter Plot**
 
-![Per capita GDP vs per capita investment in R&D](images/fig1.png)
+![Relationship between monthly rainfall in Mansoon season](img/scatter.png)
 
-**Observation:** The scatter plot above shows the correlation between per capita GDP and investment in R&D for different countries. We observe that countries with higher GDP have higher investments into R&D.
-
-
-**b. Box Plot**
-
-![Variability in contribution of different sectors to total GDP from 1951-2012](images/fig2.png)
-
-**Observation:** From the plot we observe that the min, max and median values of the service sector is higher than those of any other sector. This shows that service sector on an average has higher contribution to the total GDP. The sectors associated to agriculture also have a substantial contribution towards the GDP but they also have much larger variability. The mining and manufacturing industries consistently have a smaller contribution to the GDP.
-
-**c. Line Plot**
-
-![Trend in contribution of different sectors to total GDP from 1951-2012](images/fig3.png)
+**Observation:** The scatter plot above shows the correlation between rain fall in two peak mansoon months in central region of India, prominantly Maharashtra.
 
 
-**Observation:** The above line plot shows the trend in contribution of different sectors to the total GDP. This trend is not visible in box plot. From the above plot we see that over the years the contribution of agriculture sectors to GDP has declined while that of service sector has increased. The contribution of mining and quarring has almost remained constant over the years whereas the manufacturing and industrial sectors contibution has grown at a very low rate.
+**b. Box plot**
+![Variability in Monthly rain fall](img/box.png)
+
+**Observation:** From the plot we observe that the min, max and median values of the rain fall in highest in the month of july. 
+
+
+**c. Bar Plot**
+![Land mass utilisation in Maharashtra](img/barplot.png)
+The plot shows land mass utilisation in various sectors from forests, industrial and agricultural among the total area of mass surveyed. The domestic presence is of significace.
 
 
